@@ -1,130 +1,150 @@
-<!DOCTYPE html>  
-2 2  <head>  
-3  -<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  
-4  -<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">   
- 3 +<script src="/assets/jquery.js"></script>  
- 4 +<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>  
-5 5  <style>  
-6 6  body {  
-7  -  font-family: ''Londrina Shadow', cursive;  
- 7 +  font-family: helvetica, sans-serif;  
-8 8    margin: 0 auto;  
-9 9    max-width: 600px;  
-10  - max-height:800px;  
-11  -  background: #234129  
- 10 +  background: #232323;  
-12 11  }  
-13 12  div {  
-14  -  height: 400px;  
- 13 +  height: 200px;  
-15 14    background-size: cover;  
-16 15    position: relative;  
-17 16    margin: 40px 0 0 0;  
-18 17    border-radius: 12px;  
-19  -  font-size:25;  
-20 18  }  
-21 19  h1 {  
-22  -  font-family: 'Lobster', cursive;  
- 20 +  font-family: 'Londrina Shadow', cursive;  
-23 21    text-align: center;  
-24 22    font-size: 75px;  
-25 23    color: #aaaaaa;  
 
- 
- @@ -43,7 +41,7 @@ 
-43 41    bottom: 0;  
-44 42    margin: 0;  
-45 43    height: 30px;  
-46  -  transition: height .10s;  
- 44 +  transition: height .5s;  
-47 45    -webkit-transition: height .5s;  
-48 46    -moz-transition: height .5s;  
-49 47  }  
+ <!DOCTYPE html>  
+  <head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">   
+  
+  <style>  
+ body {  
+  font-family: 'Londrina Shadow', cursive;  
+   margin: 0 auto;  
+   max-width: 600px;  
+   max-height: 800px;  
+  background: #234129  
+  
+  }  
 
- 
- @@ -61,26 +59,16 @@ 
-61 59  }  
-62 60    
-63 61  .first{  
-64  -  background-image: url("http://www.borongaja.com/data_images/out/26/668922-yamaha-bike-r6.jpg");  
-65  -background-position  
- 62 +  background-image: url("http://images2.mygola.com/ab8eca03d710b5bea3d6b46ad5f64553_1394338489_l.jpg");  
-66 63  }  
-67 64  .second{  
-68  -  background-image: url("http://www.carblogindia.com/wp-content/uploads/2014/12/bajaj-pulsar-ss200-images.jpg");  
-69  -  
- 65 +  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYCZ4WpDNL-laOgvNLPE-zmnoVmojiVm6XJBTlI1T9ZG170kb-bQ");  
-70 66  }  
-71 67  .dessert{  
-72  -  background-image: url("http://carnbikeexpert.com/wp-content/uploads/2016/02/Bajaj-V-Back-View.jpg");  
-73  -}  
-74  -.third{  
-75  -  background-image: url("http://www.zastavki.com/pictures/originals/2014/Motocycles___BMW_Bikes_Bmw_s_1000_rr_racebike_075427_.jpg");  
- 68 +  background-image: url("http://www.nie.ac.in/wp-content/uploads/2015/04/nie.png");  
-76 69  }  
-77  -.fourth{  
-78  -  background-image: url("http://img.7te.org/images/570x363/royal-cars-and-bikes-wallpapers-bikes-and-cars-hd-wallpapers-2581028.jpg");  
-79  -}  
-80  -  
-81 70  .price {  
-82 71    float: right;  
-83  -font-size:25px;  
-84 72  }  
-85 73  @media (max-width: 500px) {  
-86 74    h1 {  
 
- 
- @@ -94,7 +82,6 @@ 
-94 82    }  
-95 83    div {  
-96 84      margin: 20px 12px 0 12px;  
-97  -  height:200px;  
-98 85    }  
-99 86    p {  
-100 87      font-size: 20px;  
+  div {  
+    height: 400px;  
+    background-size: cover;  
+   position: relative;  
+   margin: 40px 0 0 0;  
+   border-radius: 12px;  
+   font-size: 25px; 
+ }  
+  h1 {  
+  font-family: 'Lobster', cursive;   
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
 
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+} 
+    .small{
+	opacity: 0;
+	} 
+    
+  .first{  
+  background-image: url("http://www.borongaja.com/data_images/out/26/668922-yamaha-bike-r6.jpg");  
+   
+  }  
+  .second{  
+ background-image: url("http://www.carblogindia.com/wp-content/uploads/2014/12/bajaj-pulsar-ss200-images.jpg");  
+  }  
+ .dessert{  
+  background-image: url("http://carnbikeexpert.com/wp-content/uploads/2016/02/Bajaj-V-Back-View.jpg");  
+}  
+.third{  
+  background-image: url("http://www.zastavki.com/pictures/originals/2014/Motocycles___BMW_Bikes_Bmw_s_1000_rr_racebike_075427_.jpg");  
  
- @@ -110,38 +97,25 @@ 
-110 97  </head>  
-111 98    
-112 99  <body>  
-113  -<h1>STAR AGENCY</h1>  
- 100 +<h1>engineering's institute</h1>  
-114 101  <h2>at a new delhi,india</h2>  
-115 102  <div class="first">  
-116  -  <p>yamaha<span class="price">$1417</span><br />  
-117  -  <small>New Yamaha  is equipped with oil cooled 250cc single cylinder engine, the bike is also featured with Fuel Injection. Targeted to the urban market the newly launched Yamaha is tuned specially to return best of both torque and performance. The absolutely stunning new  looks similar to the M-Slaz from the front headlight.</small> </p>  
- 103 +  <p>this is best collage for engineering.it provide a lot of courses.These courses are computer science ,electronics and communication,civil,mechanical.</p>  
-118 104  </div>  
-119 105    
-120 106  <div class="second">  
-121  -  <p>pulsar<span class="price">$1194</span><br />  
-122  -  <small>Its advanced styling and many modern features further fuelled the demand for premium commuters and set the bike on a course for the history books.  
-123  -  
-124  -The Bajaj Pulsar’s first appearance included a dome headlight, aircraft type fuel tank lid, full analogue console with side-stand indicators. The current avatar includes the famous domed cowl, side scoops, 3D lettering and full digital console with analogue tachometer. It is offered in three colour options and a single variant.</small></p>  
- 107 +  <p>Its infrastructure is very good.Beside the good studied there are many extra activity like tech fast,ignite,industrial trip and so on.</p>  
-125 108  </div>  
-126 109      
-127 110  <div class="dessert">  
-128  -  <p>vikrant<span class="price">$1791</span><br />  
-129  -  <small>The Bajaj V15 (Vikrant) is no ordinary bike. It has an upright position that oozes qualities and solidity that encapsulate the strong INS Vikrant whose metal it contains. With a forceful DTS-i motor at its heart, and an entire scope of different class driving elements, this is a machine that is destined to stand tall. The official tagline of Bajaj V15 is “Made from the Invincible Metal of INS Vikrant”.</small></p>  
-130  -</div>  
-131  -  
-132  -<div class="third">  
-133  -<p>BMW<span class="price">$1342</span><br />  
-134  -<small>Speed has to be kept under control. And motorcycle control is exactly what we have been constantly reinventing over the last 20 years. The S 1000 RR represents a milestone in electronic rider safety: ultra-lightweight ABS (2.5kg), which can be used in conjunction with the extremely efficient DTC dynamic traction control (available as an optional extra) – quite unique for 2009. </small></p>  
- 111 +  <p>At a placement point of view ,this institute come top five institute.Moreover Hostal facility is also there.It provide transport facility.</p>  
-135 112  </div>  
-136 113    
-137  -<div class="fourth">  
-138  -<p>vectric<span class="price">$1112</span><br />  
-139  -<small> Talk about speed and you won't dare crossing 110kmph and even if you did then be careful while braking cause it skids like hell. It kind of feels painful when you try to move a 190KG bike after a hectice day.</small></p>  
-140  -</div>  
-141 114  <script>  
-142 115    $('div').on('click', function() {  
-143 116        $(this).toggleClass('show-description');  
-144 117    });  
-145 118  </script>  
-146 119    
-147 120  </body>  
- 121 +</html> 
+  }  
+.fourth{  
+  background-image: url("http://img.7te.org/images/570x363/royal-cars-and-bikes-wallpapers-bikes-and-cars-hd-wallpapers-2581028.jpg");  
+}  
+ 
+ .price {  
+   float: right;  
+font-size: 25px;  
+  }  
+  @media (max-width: 500px) {  
+    h1 { 
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+ }  
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  } 
+    div {  
+     margin: 20px 12px 0 12px;  
+     height: 200px;  
+   }  
+   p {  
+     font-size: 20px;  
+ }
+ small {
+    font-size: 16px;
+  }
+  }
+
+</style>
+
+  </head>  
+    
+  <body>  
+<h1>STAR AGENCY</h1>  
+  
+  <h2>at a new delhi,india</h2>  
+  <div class="first">  
+ <p>yamaha<span class="price">$1417</span><br />  
+ <small>New Yamaha  is equipped with oil cooled 250cc single cylinder engine, the bike is also featured with Fuel Injection. Targeted to the urban market the newly launched Yamaha is tuned specially to return best of both torque and performance. The absolutely stunning new  looks similar to the M-Slaz from the front headlight.</small> </p>  
+  </div>  
+    
+ <div class="second">  
+ <p>pulsar<span class="price">$1194</span><br />  
+  <small>Its advanced styling and many modern features further fuelled the demand for premium commuters and set the bike on a course for the history books.  
+  The Bajaj Pulsar’s first appearance included a dome headlight, aircraft type fuel tank lid, full analogue console with side-stand indicators. The current avatar includes the famous domed cowl, side scoops, 3D lettering and full digital console with analogue tachometer. It is offered in three colour options and a single variant.</small></p>  
+  </div>  
+     
+ <div class="dessert">  
+ <p>vikrant<span class="price">$1791</span><br />  
+ <small>The Bajaj V15 (Vikrant) is no ordinary bike. It has an upright position that oozes qualities and solidity that encapsulate the strong INS Vikrant whose metal it contains. With a forceful DTS-i motor at its heart, and an entire scope of different class driving elements, this is a machine that is destined to stand tall. The official tagline of Bajaj V15 is “Made from the Invincible Metal of INS Vikrant”.</small></p> </div>  
+  
+<div class="third">  
+<p>BMW<span class="price">$1342</span><br />  
+<small>Speed has to be kept under control. And motorcycle control is exactly what we have been constantly reinventing over the last 20 years. The S 1000 RR represents a milestone in electronic rider safety: ultra-lightweight ABS (2.5kg), which can be used in conjunction with the extremely efficient DTC dynamic traction control (available as an optional extra) – quite unique for 2009. </small></p>  
+ </div>  
+    
+<div class="fourth">  
+<p>vectric<span class="price">$1112</span><br />  
+<small> Talk about speed and you won't dare crossing 110kmph and even if you did then be careful while braking cause it skids like hell. It kind of feels painful when you try to move a 190KG bike after a hectice day.</small></p>  
+</div>  
+  <script>  
+   $('div').on('click', function() {  
+        $(this).toggleClass('show-description');  
+    });  
+ </script>  
+    
+  </body>  
+  
